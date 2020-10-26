@@ -6,13 +6,28 @@ const blueFill  = [91, 206, 250]
 const pinkFill  = [245, 169, 184]
 const whiteFill = [255, 255, 255]
 
+const sBlueFill  = [92, 80, 154]
+const sPinkFill  = [193, 103, 136]
+const sWhiteFill = [225, 223, 200]
+
 // You can also set the program, which will specify the order of bars on the image.
 const program = [
-    blueFill,
-    pinkFill,
-    whiteFill,
-    pinkFill,
-    blueFill
+    // Default filter
+    [
+        blueFill,
+        pinkFill,
+        whiteFill,
+        pinkFill,
+        blueFill
+    ],
+    // Saturated filter
+    [
+        sBlueFill,
+        sPinkFill,
+        sWhiteFill,
+        sPinkFill,
+        sBlueFill
+    ]
 ]
 
 const status = document.getElementById('status')
@@ -23,6 +38,7 @@ const updatePreview = (opacity) => {
     const photo = image.files[0]
     const ctx = canvas.getContext('2d')
     const reader = new FileReader()
+    const idx = styles.selectedIndex
     
     if(photo === undefined) {
         status.innerText = 'select an image'
@@ -47,12 +63,12 @@ const updatePreview = (opacity) => {
         imageLoaded = true
         
         const barWidth = canvas.width
-        const barHeight = canvas.height / program.length
+        const barHeight = canvas.height / program[idx].length
         
         ctx.lineWidth = 0
         
-        for(let i = 0; i < program.length; i++) {
-            ctx.fillStyle = 'rgba(' + program[i].join(',') + ', ' + (opacity / 100) + ')'
+        for(let i = 0; i < program[idx].length; i++) {
+            ctx.fillStyle = 'rgba(' + program[idx][i].join(',') + ', ' + (opacity / 100) + ')'
             ctx.beginPath()
             ctx.fillRect(0, i * barHeight, barWidth, barHeight)
             ctx.stroke()
