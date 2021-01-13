@@ -34,51 +34,51 @@ const sAzureFill = [21, 148, 246]
 
 // You can also set the program, which will specify the order of bars on the image.
 const program = [
-    // Transgender filter
-    [
-        blueFill,
-        pinkFill,
-        whiteFill,
-        pinkFill,
-        blueFill
-    ],
-    // Transgender saturated filter
-    [
-        sBlueFill,
-        sPinkFill,
-        sWhiteFill,
-        sPinkFill,
-        sBlueFill
-    ],
-    // Nonbinary filter
-    [
-    	yellowFill,
-    	violetFill,
-    	whiteFill,
-    	blackFill
-    ],
-    // Nonbinary saturated filter
-    [
-    	sYellowFill,
-    	sVioletFill,
-    	sWhiteFill,
-    	sBlackFill
-    ],
-    // Bisexual filter
-    [
-    	darkPinkFill,
-    	darkPinkFill,
-    	lavenderFill,
-    	darkBlueFill,
-    	darkBlueFill
-    ],
-    // Bisexual saturated filter
-    [
-        sDarkPinkFill,
-        sDarkPinkFill,
-        sLavenderFill,
-        sDarkBlueFill,
-        sDarkBlueFill
+	// Transgender filter
+	[
+		blueFill,
+		pinkFill,
+		whiteFill,
+		pinkFill,
+		blueFill
+	],
+	// Transgender saturated filter
+	[
+		sBlueFill,
+		sPinkFill,
+		sWhiteFill,
+		sPinkFill,
+		sBlueFill
+	],
+	// Nonbinary filter
+	[
+		yellowFill,
+		violetFill,
+		whiteFill,
+		blackFill
+	],
+	// Nonbinary saturated filter
+	[
+		sYellowFill,
+		sVioletFill,
+		sWhiteFill,
+		sBlackFill
+	],
+	// Bisexual filter
+	[
+		darkPinkFill,
+		darkPinkFill,
+		lavenderFill,
+		darkBlueFill,
+		darkBlueFill
+	],
+	// Bisexual saturated filter
+	[
+		sDarkPinkFill,
+		sDarkPinkFill,
+		sLavenderFill,
+		sDarkBlueFill,
+		sDarkBlueFill
 	],
 	// Polysexual filter
 	[
