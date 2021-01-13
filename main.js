@@ -10,9 +10,31 @@ const sBlueFill  = [92, 80, 154]
 const sPinkFill  = [193, 103, 136]
 const sWhiteFill = [225, 223, 200]
 
+const yellowFill = [243, 197, 69]
+const violetFill = [153, 103, 203]
+const blackFill	 = [0, 0, 0]
+
+const sYellowFill = [255, 244, 48]
+const sVioletFill = [156, 89, 209]
+const sBlackFill  = [30, 30, 25]
+
+const darkPinkFill = [218, 0, 181]
+const lavenderFill = [108, 80, 151]
+const darkBlueFill = [0, 68, 169]
+
+const sDarkPinkFill = [217, 0, 111]
+const sLavenderFill = [115, 79, 150]
+const sDarkBlueFill = [0, 56, 168]
+
+const mintFill  = [17, 205, 80]
+const azureFill = [35, 178, 239]
+
+const sMintFill  = [1, 214, 106]
+const sAzureFill = [21, 148, 246]
+
 // You can also set the program, which will specify the order of bars on the image.
 const program = [
-    // Default filter
+    // Transgender filter
     [
         blueFill,
         pinkFill,
@@ -20,14 +42,56 @@ const program = [
         pinkFill,
         blueFill
     ],
-    // Saturated filter
+    // Transgender saturated filter
     [
         sBlueFill,
         sPinkFill,
         sWhiteFill,
         sPinkFill,
         sBlueFill
-    ]
+    ],
+    // Nonbinary filter
+    [
+    	yellowFill,
+    	violetFill,
+    	whiteFill,
+    	blackFill
+    ],
+    // Nonbinary saturated filter
+    [
+    	sYellowFill,
+    	sVioletFill,
+    	sWhiteFill,
+    	sBlackFill
+    ],
+    // Bisexual filter
+    [
+    	darkPinkFill,
+    	darkPinkFill,
+    	lavenderFill,
+    	darkBlueFill,
+    	darkBlueFill
+    ],
+    // Bisexual saturated filter
+    [
+        sDarkPinkFill,
+        sDarkPinkFill,
+        sLavenderFill,
+        sDarkBlueFill,
+        sDarkBlueFill
+	],
+	// Polysexual filter
+	[
+		darkPinkFill,
+		mintFill,
+		azureFill
+	],
+	// Polysexual saturated filter
+	[
+		sDarkPinkFill,
+		sMintFill,
+		sAzureFill
+	]
 ]
 
 const status = document.getElementById('status')
